@@ -1,0 +1,67 @@
+
+html, body,main{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+body{
+    display:flex;
+    background-color:transparent;
+    padding:0.1%;
+}
+
+.container{
+    margin:auto;
+    background-color:black;
+    overflow:hidden;
+    width:99.6%;
+    height:99.6%;
+    display:flex;
+    -webkit-app-region: drag;
+}
+
+.img{
+    overflow:hidden;
+    cursor:grab;
+    object-fit:contain;
+    object-position: 0%;
+    height:100%;
+}
+
+.load_pic_button{
+    -webkit-app-region: no-drag;
+    position:absolute;
+    z-index:15;
+    background-image:url("file.svg");
+    top:5px;
+    left:5px;
+    width:30px;
+    height:30px;
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+    border-radius:50%;
+    border:none;
+    background-color:transparent;
+    opacity:0.1;
+}
+
+.load_pic_button:hover{
+    opacity:1;
+    border: 1px dashed white;
+}
+.load_pic_text{
+    -webkit-app-region: no-drag;
+    margin:auto;
+    color:white;
+    cursor:pointer;
+    font-size:26px;
+    padding:5px;
+}
+.load_pic_text:hover{
+    border:2px dashed white;
+}
+.hidden{
+    display:none;
+}

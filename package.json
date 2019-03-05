@@ -1,0 +1,22 @@
+{
+  "name": "PosterView",
+  "version": "1.0.0",
+  "description": "Photo Viewer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Photo",
+    "viewer",
+    "simple",
+    "draggable",
+    "photo",
+    "viewer"
+  ],
+  "author": "Simon Orn Reynisson",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.6"
+  }
+}
