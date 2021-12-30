@@ -4,19 +4,20 @@
   "description": "Photo Viewer",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron . ",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
-  "keywords": [
-    "Photo",
-    "viewer",
-    "simple",
-    "draggable",
-    "photo",
-    "viewer"
-  ],
-  "author": "Simon Orn Reynisson",
-  "license": "ISC",
+  "author": "durtur@github ",
+  "license": "CC-BY-NC-4.0",
   "devDependencies": {
-    "electron": "^4.0.6"
-  }
+    "electron": "^16.0.4",
+    "electron-builder": "^20.44.4",
+    "electron-packager": "^10.1.2"
+  },
+  "dependencies": {
+    "electron-updater": "^4.1.2",
+    "file-system": "^2.2.2"
+  },
+  "postinstall": "electron-builder install-app-deps"
 }
